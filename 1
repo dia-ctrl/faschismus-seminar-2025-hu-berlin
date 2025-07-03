@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Text mit klickbaren Begriffen NSDAP/AfD</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Merriweather", serif;
+        margin: 0;
+        background: #ffffff;
+        color: #222;
+        padding: 40px 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 40px;
+        background: rgba(240, 240, 240, 0.9);
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        line-height: 1.8;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeIn 1.2s ease forwards;
+      }
+
+      h1 {
+        margin-top: 0;
+        font-size: 2.4em;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.3s;
+      }
+
+      h2 {
+        font-style: italic;
+        font-size: 1.4em;
+        opacity: 0;
+        animation: fadeIn 1s ease forwards;
+        animation-delay: 0.6s;
+      }
+
+      p {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+        margin-bottom: 1.5em;
+      }
+
+      p.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .toggle-term {
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        transition: color 0.3s ease;
+      }
+
+      .blue-term {
+        color: #007bff;
+      }
+
+      .blue-term:hover {
+        color: #0056b3;
+      }
+
+      .grey-term {
+        color: #555555;
+      }
+
+      .grey-term:hover {
+        color: #333333;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Der Aufstieg der
+        <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+          >NSDAP</span
+        >
+      </h1>
+
+      <h2>
+        Ein
+        <span
+          class="toggle-term grey-term"
+          data-term1="historischer"
+          data-term2="fiktiver"
+          >historischer</span
+        >
+        <span class="toggle-term grey-term" data-term1="Rück" data-term2="Aus"
+          >Rück</span
+        >blick
+      </h2>
+
+      <p>
+        Die
+        <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+          >NSDAP</span
+        >
+        hat sich zwischen
+        <span class="toggle-term grey-term" data-term1="1920" data-term2="2013"
+          >1920</span
+        >
+        und
+        <span class="toggle-term grey-term" data-term1="1933" data-term2="2028"
+          >1933</span
+        >
+        von einer kleinen Splitterpartei zu einer der mächtigsten politischen
+        Bewegungen in Deutschland entwickelt. Ihr Aufstieg war eng mit den
+        politischen und wirtschaftlichen Krisen der
+        <span
+          class="toggle-term grey-term"
+          data-term1="Weimarer Republik"
+          data-term2="Bundesrepublik"
+          >Weimarer Republik</span
+        >
+        verbunden.
+      </p>
+      Die Anfänge
+      <p>
+        Die Anfänge Eine zentrale Strategie der
+        <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+          >NSDAP</span
+        >
+        war der massive Einsatz von Propaganda in eigenen Medien und bei
+        öffentlichen Auftritten. Sie wiederholte beständig
+        <span
+          class="toggle-term grey-term"
+          data-term1="antisemitische"
+          data-term2="rassistische"
+          >antisemitische</span
+        >
+        Unwahrheiten und Verschwörungserzählungen, verbreitete Angst und Hass
+        <span
+          class="toggle-term grey-term"
+          data-term1="auf den Straßen"
+          data-term2="im Internet"
+          >auf den Straßen</span
+        >
+        und radikalisierte ihre Anhänger, bis die Narrative in der Mitte der
+        Gesellschaft angekommen waren und auch von etablierten Medien und
+        Politikern übernommen wurden. Mit dieser erfolgreichen
+        Propaganda-Strategie gelang es ihr, breite Bevölkerungsschichten zu
+        mobilisieren.
+      </p>
+      Die großen Parteien der
+      <span
+        class="toggle-term grey-term"
+        data-term1="Weimarer Republik"
+        data-term2="Bundesrepublik"
+        >Weimarer Republik</span
+      >
+      - die Sozialdemokratische Partei Deutschlands (SPD), die
+      <span
+        class="toggle-term grey-term"
+        data-term1="Deutsche Zentrumspartei"
+        data-term2=" Christlich Demokratische Union (CDU)"
+        >Deutsche Zentrumspartei</span
+      >
+      und die
+      <span
+        class="toggle-term grey-term"
+        data-term1="Bayrische Volkspartei (BVP)"
+        data-term2=" Christlich Soziale Union"
+        >Bayrische Volkspartei (BVP)</span
+      >
+      - versuchten die Demokratie zu stabilisieren, konnten aber angesichts von
+      Inflation, Arbeitslosigkeit und politischer Radikalisierung oft nicht
+      genügend Widerstand leisten. Hinzu kamen gegensätzliche Strategien im
+      Umgang mit der
+      <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+        >NSDAP</span
+      >
+      : Konservative sahen die Ausbreitung rechtsextremer Positionen in Teilen
+      der Bevölkerung nicht als Folge der
+      <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+        >NSDAP</span
+      >-Propaganda, sondern als Ausdruck der öffentlichen Meinung. Sie folgten
+      daher dem Rechtsruck, was zu einer weiteren politischen Spaltung der
+      politischen Mitte führte.
+      <p>
+        Die bürgerlich-liberale
+        <span class="toggle-term grey-term" data-term1="DVP" data-term2=" FDP"
+          >DVP</span
+        >, die in der
+        <span
+          class="toggle-term grey-term"
+          data-term1="Weimarer Republik"
+          data-term2="Bundesrepublik"
+          >Weimarer Republik</span
+        >
+        eine wichtige politische Kraft gewesen war, entwickelte zunehmend einen
+        wirtschaftsliberalen Kurs und rückte ab
+        <span class="toggle-term grey-term" data-term1="1929" data-term2="2024"
+          >1929</span
+        >
+        nach rechts. Dadurch verlor sie immer mehr an Zustimmung, bis sie
+        schließlich bedeutungslos wurde.
+      </p>
+
+      <p>
+        Die Parteien links von der SDP gewannen in dieser Zeit an Einfluss und
+        forderten einen Systemwechsel, taten aber wenig bis nichts, um Wähler
+        aus anderen Schichten zu gewinnen. Im Gegenteil, die kleinbürgerliche
+        Mittelschicht wurde verprellt. So fand die
+        <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+          >NSDAP</span
+        >
+        in den linken Parteien ihren größten politischen Gegner und beschimpfte
+        sie und ihre Anhänger als
+        <span
+          class="toggle-term grey-term"
+          data-term1="bolschewistisch"
+          data-term2="links-grün-versifft"
+          >bolschewistisch</span
+        >.
+      </p>
+
+      <p>Frühe Jahre und politische Radikalisierung</p>
+
+      <p>
+        Die
+        <span
+          class="toggle-term grey-term"
+          data-term1="Spanische Grippe"
+          data-term2="Corona Pandemie"
+          >Spanische Grippe</span
+        >
+        von
+        <span class="toggle-term grey-term" data-term1="1918" data-term2="2020"
+          >1918</span
+        >
+        bis
+        <span class="toggle-term grey-term" data-term1="1920" data-term2="2022"
+          >1920</span
+        >, die Inflation und die zunehmende wirtschaftlichen Probleme sowie die
+        steigende Arbeitslosigkeit verschlechterten die wirtschaftliche Lage
+        vieler Deutscher.
+        <span class="toggle-term grey-term" data-term1="1928" data-term2="2020"
+          >1928</span
+        >
+        gingen in ganz Deutschland Bauern auf die Straße, um gegen die Politik
+        aus Berlin zu demonstrieren. Gravierende Versäumnisse bei der Reform der
+        Verwaltung der
+        <span
+          class="toggle-term grey-term"
+          data-term1="Weimarer Republik"
+          data-term2="Bundesrepublik"
+          >Weimarer Republik</span
+        >
+        und die mangelnde Kompromissfähigkeit der etablierten Parteien führten
+        zu einem breiten Vertrauensverlust der Bevölkerung in das politische
+        System. Die
+        <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+          >NSDAP</span
+        >
+        nutzte die Unsicherheiten und Ängste geschickt aus und inszenierte sich
+        mit ihrem
+        <span
+          class="toggle-term grey-term"
+          data-term1="nationalen Wiederaufstieg"
+          data-term2="Zukunftsplan für Deutschland"
+          >nationalen Wiederaufstieg</span
+        >. Ihr Versprechen, das politische Chaos zu beenden und Deutschland
+        wieder stark zu machen, fand großen Anklang.
+      </p>
+
+      <p>
+        Wahlerfolge der
+        <span class="toggle-term blue-term" data-term1="NSDAP" data-term2="AfD"
+          >NSDAP</span
+        >
+      </p>
+
+      <p>
+        Bei den
+        <span
+          class="toggle-term grey-term"
+          data-term1="Reich"
+          data-term2="Bunde"
+          >Reich</span
+        >stagswahlen
+        <span class="toggle-term grey-term" data-term1="1928" data-term2="2021"
+          >1928</span
+        >
+        wurde die SPD stärkste Fraktion im
+        <span
+          class="toggle-term grey-term"
+          data-term1="Reich"
+          data-term2="Bunde"
+          >Reich</span
+        >stag. Aufgrund der schwierigen Mehrheitsverhältnisse zog sich die
+        Regierungsbildung jedoch über viele Wochen hin. Unter der Führung von
+        <span
+          class="toggle-term grey-term"
+          data-term1="Reich"
+          data-term2="Bunde"
+          >Reich</span
+        >skanzler
+        <span
+          class="toggle-term grey-term"
+          data-term1="Hermann Müller"
+          data-term2="Olaf Scholz"
+          >Hermann Müller</span
+        >
+        wurde schließlich eine Koalition aus mehreren Parteien gebildet. Das
+        neue Kabinett geriet gleich zu Beginn seiner Amtszeit in eine schwere
+        Krise. Grund dafür waren die konfliktreichen, politischen
+        Auseinandersetzungen zwischen den Koalitionspartnern selbst. Vor allem
+        in den Bereichen Haushalt und Sozialleistungen lagen die Positionen weit
+        auseinander. Dies führte schließlich
+        <span class="toggle-term grey-term" data-term1="1930" data-term2="2024"
+          >1930</span
+        >
+        zum Bruch der Koalition.
+      </p>
+
+      <p></p>
+    </div>
+
+    <script>
+      // Klickbare Begriffe umschalten
+      const toggleTerms = document.querySelectorAll(".toggle-term");
+      toggleTerms.forEach((el) => {
+        el.addEventListener("click", () => {
+          el.textContent =
+            el.textContent === el.dataset.term1
+              ? el.dataset.term2
+              : el.dataset.term1;
+        });
+      });
+
+      // Absätze beim Scrollen sichtbar machen mit Fade-in
+      const paragraphs = document.querySelectorAll("p");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // nur einmal animieren
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      paragraphs.forEach((p) => observer.observe(p));
+    </script>
+    <!-- Quellen-Sektion -->
+    <section
+      style="
+        max-width: 800px;
+        margin: 40px auto 80px auto;
+        padding: 10px 20px;
+        font-size: 0.9em;
+        color: #444;
+      "
+    >
+      <h3
+        style="
+          font-style: italic;
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 6px;
+          margin-bottom: 10px;
+        "
+      >
+        Quellen
+      </h3>
+      <ol>
+        <li>Quelle 1: Autor, Titel, Jahr, Link</li>
+        <li>Quelle 2: Autor, Titel, Jahr, Link</li>
+        <li>Quelle 3: Autor, Titel, Jahr, Link</li>
+      </ol>
+    </section>
+
+    <!-- Gruppen-Mitglieder Footer -->
+    <footer
+      style="
+        margin: 60px auto 40px auto;
+        max-width: 300px;
+        background: rgba(240, 240, 240, 0.9);
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 0.85em;
+        color: #555;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-family: 'Merriweather', serif;
+      "
+    >
+      Gruppenmitglieder: ...
+    </footer>
+  </body>
+</html>
